@@ -14,7 +14,7 @@ app.get('*', (req, res) => {
   res.sendFile(join(__dirname, 'client', 'build', 'index.html'))
 })
 
-require('mongoose').connect(process.env.MONGODB_URI || 'mongodb://localhost/booksdb', {
+require('mongoose').connect(MONGODB_URI || 'process.env.LOCAL_URI', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
