@@ -1,5 +1,5 @@
 {
-  "name": "GoogleBooks",
+  "name": "googlebooks",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/benroznos/GoogleBooks#readme",
   "dependencies": {
     "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.9.24",
