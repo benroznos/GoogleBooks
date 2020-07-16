@@ -45,12 +45,10 @@ const Home = () => {
 
   bookState.handleSaveBook = (book) => {
     axios.post('/api/books', {
-      id: book.id,
       title: book.volumeInfo.title,
       author: book.volumeInfo.authors,
-      description: book.volumeInfo.description,
-      image: book.volumeInfo.imageLinks.thumbnail,
-      link: book.volumeInfo.infoLink
+      image: book.volumeInfo.imageLinks.thumbnai,
+      description: book.volumeInfo.description
     })
       .then(() => {
         const books = bookState.books
